@@ -63,11 +63,17 @@ body {
   background-color: $color-1;
   color: $black;
   overflow: hidden;
+  
+  
+  @media screen and (max-width: 900px){
+   
+    overflow-y: initial;
+  }
 
   @media screen and (max-width: 430px){
     position: relative;
     max-width: 100vw;
-    overflow-y: initial;
+    // overflow-y: initial;
   }
 }
 main {
