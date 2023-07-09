@@ -54,7 +54,14 @@
       opacity: 1;
 
       li {
-        transform: rotatey(0deg)
+        transform: rotatey(0deg);
+
+      }
+
+      @media screen and (max-width: 650px){
+   li {
+    transform: translateX(-150px);
+   }
       }
     }
 
