@@ -2,7 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    
 
     &:after {
         content: '';
@@ -40,13 +41,37 @@
         background: rgba(223, 230, 233,0.5);
         display: grid;
         height: 550px;
-        width: 80%;
+        width: 72%;
         border-radius: 25px;
         grid-template-rows: 1fr 3fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas: 
         "ab ab ab pic"
         "sk sk sk sk";
+
+        @media screen and (max-width: 1300px){
+            width: 60%;
+          }
+          @media screen and (max-width: 1150px){
+            width: 54%;
+            height: 600px;
+          }
+          @media screen and (max-width: 900px){
+            grid-template-rows: 1fr 1fr 3fr;
+            grid-template-areas: 
+            "pic pic pic pic"
+            "ab ab ab ab"
+            "sk sk sk sk";
+
+            height: 700px;
+            width: 50%;
+          }
+          @media screen and (max-width: 600px){
+            margin-top: 200px;
+            width: 80%;
+            height: 1000px;
+            padding-top: 10px;
+          }
     }
 
 
@@ -57,9 +82,17 @@
         h1{
             margin-bottom: 10px;
             font-size: 38px;
+            @media screen and (max-width: 1150px){
+                font-size: 30px;
+              }
+         
         }
         p{
             line-height: 1.5rem;
+            @media screen and (max-width: 1150px){
+                font-size: 1rem;
+                line-height: 1.2rem;
+              }
             span{
                 color: $color-2;
             }
@@ -81,6 +114,10 @@
         border-radius: 50%;
         object-fit: cover;
         animation: quick-add_pulse 2s linear infinite; 
+        @media screen and (max-width: 1150px){
+            width: 100px;
+            height: 100px;
+          }
 
     @keyframes quick-add_pulse {
         0% {
@@ -125,6 +162,9 @@
             text-align: center;
             font-size: 36px;
             margin-top: 20px;
+            @media screen and (max-width: 1150px){
+                font-size: 20px;
+              }
         }
         .skills-container {
             margin-top: 50px;
@@ -132,10 +172,20 @@
             height: 70%;
             justify-content: space-around;
             align-items: flex-start;
+            @media screen and (max-width: 600px){
+                flex-direction: column;
+               
+                align-items: center;
+                margin-top: 25px;
+              }
+            
             h3{
                 font-size: 24px;
                 font-family: Arial, Helvetica, sans-serif;
                 // font-weight: 700;
+                @media screen and (max-width: 1150px){
+                    font-size: 16px;
+                  }
             }
             li{
                 display: flex;
@@ -144,9 +194,16 @@
                 font-size: 18px;
                 line-height: 1.8rem;
                 font-weight: 700;
+                @media screen and (max-width: 1150px){
+                    font-size: 12px;
+                  }
                 img {
                     width: 18px;
                     height: 18px;
+                    @media screen and (max-width: 1150px){
+                        width: 12px;
+                        height: 12px;
+                      }
                 }
             }
         }

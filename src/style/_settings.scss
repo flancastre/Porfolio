@@ -17,6 +17,17 @@ $color-4: rgb(141, 141, 141);
 $black: rgb(40, 40, 40);
 $red: rgb(253, 87, 87);
 
+// ----- test darck mode 1
+
+// $color-1:#0D0500;
+// $color-2:#38ada9;
+// $color-3:#2f3542;
+// $color-4: rgb(141, 141, 141);
+// $black:#f1f2f6;
+// $red: rgb(253, 87, 87);
+
+// ----- test darck mode 2
+
 // $color-1: #2C3A47;
 // $color-2:#38ada9;
 // $color-3:#2f3542;
@@ -32,6 +43,7 @@ $red: rgb(253, 87, 87);
   outline: none;
   border: none;
   text-decoration: none;
+ 
 
   &::selection {
     color: $color-1;
