@@ -35,7 +35,7 @@
     animation: navProject 1s ease forwards;
 
     @media screen and (max-width: 650px){
-      left: 70%;
+      left: 45%;
     
     }
   
@@ -61,6 +61,11 @@
     transform: translateX(-50%);
     transform: scale(0);
     animation: logoProject 2s ease forwards;
+    @media screen and (max-width: 650px){
+      left: 20%;
+    
+    }
+  
   
     @keyframes logoProject {
       to {

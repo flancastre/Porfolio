@@ -114,6 +114,10 @@ const Abouts = () => {
                     <li>
                       <i className="fa-brands fa-github"></i>git & github
                     </li>
+                    <li>
+                      <img src="./assets/img/swager.png" alt="swager" />
+                      swagger ui
+                    </li>
                   </ul>
                 </div>
               </div>
